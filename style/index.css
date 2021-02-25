@@ -1,1 +1,191 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */ 
+ 
+html, body, div, span, applet, object, iframe, , h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; font-size: 100%; font: inherit; vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } table { border-collapse: collapse; border-spacing: 0; }
+ 
+ 
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+max-width: 100%;  
+border: 1px solid gray; 
+} 
+ 
+html{
+font-size: 62.5%;
+}
+ 
+body{
+font-family: Moto serif;
+font-size: 2rem;
+line-height: 1.5;
+color: #4f4f4f;
+background-color: lightgray;
+}
+ 
+h1, h2, h3, h4, h5 , h6{
+font-family: Nunito Sans", sans-sarif;
+letter-spacing: 3px;
+}
+ 
+ 
+a{
+color: #4f4f4f;
+text-decoration: none;
+letter-spacing: 3px;
+}
+ 
+ 
+.main-container{
+   margin: 0 auto;
+   width:75%;
+border: black 2px solid;
+   /* margin: 0 auto; */
+}
+ 
+nav{
+   margin: 2% 0 2% 0;
+display: flex;
+justify-content: space-around;
+}
+nav a{
+   border-radius:15%;
+  /* background-color: gray; */
+   width: 20%;
+   text-align: center;
+}
+ 
+nav a:hover{
+    color:gray;
+}
+img{
+border-radius: 100%;
+width:30%;
+height: 40vh;
+margin: 5%;
+}
+#home-section{
+   display: flex;
+   justify-content: center;
+}
+.content{
+   width:50%;
+   margin:17% 0 0 2% ;
+}
+.space{
+   width: 100%;
+   height: 6vh;
+   background-image:url(https://images.unsplash.com/photo-1610921418837-05921d26c6f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80)
+}
+#about-section{
+   margin:2% 0 5% 10%;
+ 
+}
+#about-section p{
+
+   width:30%;
+ }
+ 
+.about-content{
+   margin-top:2%;
+   display:flex;
+}
+.about-content img{
+   margin: 0 0 0 15%;
+}
+.project-gallery1{
+   display:flex;
+   justify-content: space-around;
+}
+#project-section{
+   text-align: center;
+}
+.project-box{
+   width: 25%;
+   height:20vh;
+   margin:2%;
+   background-image:url(https://picsum.photos/200/300);
+}
+ 
+#contact-section{
+display: flex;
+width: 100%;
+background-color: navy;
+height:10vh;
+}
+ 
+.social-media{
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+}
+.social-media a{
+color:white;
+width:10%;
+ 
+}
+.fa {
+  
+   margin:auto 0;
+   font-size: 30px;
+   text-align: center;
+   text-decoration: none;
+ }
+ .fa:hover{
+     color:gray;
+ }
+ 
+ @media (max-width: 800px){
+     a{
+          margin: 0 auto;
+     }
+   nav {
+            display: flex;
+          flex-direction: column;
+          
+         
+        }
+        #home-section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        img{
+            margin:5% auto;
+        }
+        .content{
+            margin: 0 auto;
+        }
+        .about-content {
+            display: flex;
+            flex-direction: column;
+           justify-content: center;;
+        }
+        #about-section p{
+            width: 75%;
+            margin:0 auto;
+           
+        }
+
+        #about-section h2{
+            text-align: center;
+        } 
+        
+        .about-content img{
+            margin: 0 auto;
+        }
+ 
+      }
+ 
+
+@media (max-width: 500px){
+#about-section p{
+    width:100%;
+}
+#about-section{
+    margin:0 auto;
+}
+nav a{
+    width: 40%;
+}
+}
